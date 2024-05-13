@@ -1,0 +1,41 @@
+@ControllerAPI_HostAddress = http://localhost:5076/api
+
+
+GET {{ControllerAPI_HostAddress}}/user
+Accept: application/json
+
+###
+
+GET {{ControllerAPI_HostAddress}}/user/2
+Accept: application/json
+
+###
+
+POST {{ControllerAPI_HostAddress}}/user
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id":3,
+  "username": "John Deeee",
+  "email": "Deee@gmail.com",
+    "fullname": "John Deee"
+}
+
+###
+
+PUT {{ControllerAPI_HostAddress}}/user/3
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id":3,
+    "username": "John Deeee",
+    "email": "fix@gmail.com",
+    "fullname": "John Deee"
+}
+
+###
+
+DELETE {{ControllerAPI_HostAddress}}/user/3
+Accept: application/json
